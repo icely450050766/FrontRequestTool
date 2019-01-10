@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>front tool demo</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no, viewport-fit=cover">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../dist/index.js"></script>
+</head>
+<body>
+<button onclick="sendAjax()">sendAjax</button>
+<script>
+    // 自动上报错误
+    new FrontTool('1aa8174f4db48dacac286d1f643a7e06', 'e3d90b3330ceb634c75f74aad0a38968', false)
+
+    function sendAjax() {
+        var method = Math.random() > 0.5 ? 'POST' : 'GET'
+        $.ajax({
+            url: 'https://code.jquery.com/jquery-3.1.1.min.js',
+            method: method,
+            data: {
+                type: 'data'
+            },
+            success: function (res) {
+                console.log(res)
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
