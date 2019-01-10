@@ -1,8 +1,8 @@
 ### used
 
 #### 模块化
-    import FrontTool from '../../../frontTool'
-    new FrontTool('1aa8174f4db48dacac286d1f643a7e06', 'e3d90b3330ceb634c75f74aad0a38968')
+    import FrontRequestTool from '../../../FrontRequestTool'
+    new FrontRequestTool('1aa8174f4db48dacac286d1f643a7e06', 'e3d90b3330ceb634c75f74aad0a38968')
 
 #### 非模块化（参考example)
 
