@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions","> 5%"]
+      },
+      "modules": false,
+      "useBuiltIns": true,
+      "debug": false
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-runtime"],
+  "comments": false
+}
